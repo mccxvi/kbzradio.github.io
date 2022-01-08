@@ -55,11 +55,6 @@ muteIconContainer.addEventListener('click', () => {
     }
 });
 
-const showRangeProgress = (rangeInput) => {
-    if(rangeInput === seekSlider) audioPlayerContainer.style.setProperty('--seek-before-width', rangeInput.value / rangeInput.max * 100 + '%');
-    else audioPlayerContainer.style.setProperty('--volume-before-width', rangeInput.value / rangeInput.max * 100 + '%');
-}
-
 seekSlider.addEventListener('input', (e) => {
     showRangeProgress(e.target);
 });
@@ -96,13 +91,11 @@ const setSliderMax = () => {
 
 const displayBufferedAmount = () => {
     const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
-    audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
 }
 
 const whilePlaying = () => {
     seekSlider.value = Math.floor(audio.currentTime);
     currentTimeContainer.textContent = calculateTime(seekSlider.value);
-    audioPlayerContainer.style.setProperty('--seek-before-width', `${seekSlider.value / seekSlider.max * 100}%`);
     raf = requestAnimationFrame(whilePlaying);
 }
 
