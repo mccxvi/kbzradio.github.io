@@ -8,8 +8,8 @@
     <link rel="canonical" href="https://kbzradio.mccxvi.pl/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-    <meta property="og:description" content="KBZR001 — latesleeper">
-    <meta name="description" content="KBZR001 — latesleeper">
+    <meta property="og:description" content="KBZR001 — Hydrae">
+    <meta name="description" content="KBZR001 — Hydrae">
     <meta name="keywords" content="Hydrae, Mikołaj Połonowicz">
     <meta property="og:url" content="https://kbzradio.mccxvi.pl/">
     <meta name="author" content="Mikołaj Połonowicz">
@@ -18,7 +18,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="KBZ Radio">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="KBZR001 — latesleeper">
+    <meta name="twitter:description" content="KBZR001 — Hydrae">
     <meta property="og:url" content="https://mccxvi.pl/">
     <meta name="twitter:title" content="KBZ Radio">
     <meta name="twitter:image" content="https://kbzradio.mccxvi.pl/assets/thumbnail.png">
@@ -36,11 +36,15 @@
     <script type="module" src="../../assets/script.js"></script>
 
 
-    <title>KBZ — latesleeper</title>
+    <title>KBZ — Hydrae</title>
   </head>
   <body>
 
-<div class="container-fluid p-5">
+    <video  muted loop id="background-video-main">
+      <source src="../../assets/videos/KBZRADIO2_HYDRAE.mp4" type="video/mp4">
+    </video>
+
+<div class="container-fluid p-5 h-100">
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3 navbar-fixed-t p-5">
@@ -53,7 +57,7 @@
       <div class="collapse" id="auditions">
       <ul class="nav flex-column pt-2">
         <li class="nav-item">
-          <a class="nav-link" href="#">KBZR001 — latesleeper</a>
+          <a class="nav-link" href="#">KBZR001 — Hydrae</a>
         </li>
       </ul>
       </div>
@@ -66,17 +70,72 @@
       <div class="collapse" id="tracklist">
       <ul class="nav flex-column pt-2">
         <li class="nav-item">
-          <p class="nav-link">01 / ID — ID</p>
+          <p class="nav-link-tracklist">01 / weird inside — No More Happy Endings</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">02 / Ankou — Forlorn</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">03 / grape milk — Things are settling down</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">04 / Erotic Cafe' — Still Plastik</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">05 / Burial — Forlorn</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">06 / Floating Points — Bias</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">07 / Gloo — Locki</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">08 / Sorrow — 21.12.2012</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">09 / kmoe — gloves</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">10 / Bonobo — Eyesdown (Machinedrum Remix)</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">11 / ID — Living Daylight</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">12 / DJBLISTACOMPACT — SOHARD</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">13 / Kusp — Not Who You Are</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">14 / Moskitoo — Lethe</p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link-tracklist">15 / Tim Granowski — Abyss</p>
         </li>
       </ul>
       </div>
 
 
       <ul class="nav flex-column">
-        <li class="nav-item pt-4">
-          <a class="nav-link" href="../../index.html#about">About</a>
+      <li class="nav-item pt-4">
+          <a class="nav-link" data-bs-toggle="collapse" href="#about-artist" role="button" aria-expanded="false" aria-controls="about-artist">Hydrae<i class="fas fa-arrow-down" style="margin-left: 5px;"></i></a>
+        </li>
+        </ul>
+      <div class="collapse" id="about-artist">
+      <ul class="nav flex-column pt-2">
+        <li class="nav-item">
+          <a class="nav-link-artist" href="https://www.instagram.com/hydrae__/">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-artist" href="https://twitter.com/Hydrae__">Twitter</a>
+        </li>
+        <li>
+          <a class="nav-link-artist" href="https://soundcloud.com/hydraemusic">Soundcloud</a>
         </li>
       </ul>
+      </div>
 
     </div>
 
@@ -84,14 +143,14 @@
 <div class="row">
 
       <div class="col-12">
-        <div class="artist-inner-player d-flex justify-content-end my-auto">latesleeper</div>
+        <div class="artist-inner-player d-flex justify-content-end my-auto">Hydrae</div>
         <div class="date-inner d-flex justify-content-end my-auto">Premiered on / 00/00/00</div>
       </div>
 
 
 <div class="col-12 player-fixed-b">
     <div class="row d-flex" id="audio-player-container">
-        <audio src="../../test.wav" preload="metadata"></audio>
+        <audio src="https://0x0.st/oi8w.mp3" preload="metadata"></audio>
       <div class="col-md-1 col-sm-2 col-2 d-flex justify-content-start">
         <button id="play-icon"></button>
       </div>
@@ -116,5 +175,17 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+              jQuery(document).ready(function() {
+            jQuery("#play-icon").click(function() {
+                if (jQuery("#background-video-main").get(0).paused) {
+                    jQuery("#background-video-main").trigger('play');
+                } else {
+                    jQuery("#background-video-main").trigger('pause');
+                }
+            });
+        });
+    </script>
   </body>
 </html>

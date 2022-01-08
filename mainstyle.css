@@ -190,3 +190,18 @@ padding-top: 1rem;
 
 }
 }
+
+#background-video-main {
+		position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.8;
+}
