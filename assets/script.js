@@ -55,15 +55,6 @@ muteIconContainer.addEventListener('click', () => {
     }
 });
 
-seekSlider.addEventListener('input', (e) => {
-    showRangeProgress(e.target);
-});
-volumeSlider.addEventListener('input', (e) => {
-    showRangeProgress(e.target);
-});
-
-
-
 
 
 /** Implementation of the functionality of the audio player */
