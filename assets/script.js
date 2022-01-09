@@ -59,6 +59,10 @@ muteIconContainer.addEventListener('click', () => {
 
 /** Implementation of the functionality of the audio player */
 
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 const audio = document.querySelector('audio');
 const durationContainer = document.getElementById('duration');
 const currentTimeContainer = document.getElementById('current-time');
@@ -80,9 +84,14 @@ const setSliderMax = () => {
     seekSlider.max = Math.floor(audio.duration);
 }
 
+
+
 const displayBufferedAmount = () => {
-    const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
+    sleep(500).then(() => {
+        const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
+    });
 }
+
 
 const whilePlaying = () => {
     seekSlider.value = Math.floor(audio.currentTime);
