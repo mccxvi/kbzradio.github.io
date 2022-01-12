@@ -153,6 +153,7 @@ justify-content: center!important;
 .navbar-fixed-t {
 
 position: unset;
+text-align: center;
 
 }
 }
@@ -183,6 +184,21 @@ position: unset;
 }
 
 @media (max-width: 650px) {
+.playicon-resp {
+    justify-content: center!important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+}
+
+@media (max-width: 650px) {
+.volcont-resp {
+    display: none;
+}
+}
+
+
+@media (max-width: 650px) {
 .player-fixed-b {
 
 position: unset;
@@ -190,6 +206,8 @@ padding-top: 1rem;
 
 }
 }
+
+
 
 #background-video-main {
 		position: fixed;

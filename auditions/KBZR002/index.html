@@ -48,6 +48,8 @@
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3 navbar-fixed-t p-5">
+      <a href="https://kbzradio.mccxvi.pl/">
+      <i class="fas fa-arrow-left"></i></a>
       <h2>KBZR002</h2>
       <ul class="nav flex-column">
       <li class="nav-item pt-5">
@@ -151,18 +153,18 @@
 <div class="col-12 player-fixed-b">
     <div class="row d-flex" id="audio-player-container">
         <audio src="https://kbzrfiles.mccxvi.pl/audio/KBZR002.ogg" preload="metadata"></audio>
-      <div class="col-md-1 col-sm-2 col-2 d-flex justify-content-start">
+      <div class="col-md-1 col-sm-2 col-12 d-flex justify-content-start playicon-resp">
         <button id="play-icon"></button>
       </div>
-      <div class="col-md-8 col-sm-6 col-6 d-flex justify-content-center">
+      <div class="col-md-8 col-sm-6 col-12 d-flex justify-content-center">
         <span id="current-time" class="my-auto vtextcs" style="padding-right: 1rem;">0:00</span>
         <input type="range" id="seek-slider" max="100" value="0">
         <span id="duration" class="my-auto vtextcs" style="padding-left: 1rem;">0:00</span>
       </div>
       <div class="col-md-3 col-sm-4 col-4 d-flex justify-content-end">
-        <output id="volume-output" class="my-auto vtextcs">100</output>
-        <input type="range" id="volume-slider" max="100" value="100">
-        <button id="mute-icon" class="my-auto"></button>
+        <output id="volume-output" class="my-auto vtextcs volcont-resp">100</output>
+        <input type="range" id="volume-slider" class="volcont-resp" max="100" value="100">
+        <button id="mute-icon" class="my-auto volcont-resp"></button>
       </div>
     </div>
 
