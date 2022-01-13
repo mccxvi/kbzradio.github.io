@@ -223,3 +223,32 @@ padding-top: 1rem;
     pointer-events: none;
     opacity: 0.8;
 }
+
+.abt-title {
+	color: black;
+	text-decoration: none;
+	font-family: "TGH-B";
+	font-size: 1.3rem;
+
+}
+
+.abt-title:hover {
+	color: black;
+	text-decoration: none;
+	font-family: "TGH-B";
+	font-size: 1.3rem;
+
+}
+
+.abt-cont {
+	color: black;
+	text-decoration: none;
+	font-family: "TGH-R";
+	font-size: 1rem;
+
+}
+
+.fas-cust-2 {
+	font-size: 1rem;
+	padding-left: 1rem;
+}
